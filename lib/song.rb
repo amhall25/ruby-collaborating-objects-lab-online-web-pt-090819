@@ -20,7 +20,7 @@ class Song
     artist_name = (file_name.split(" - ")[1])
     self.new(songname)
     Artist.find_or_create_by_name(artist_name)
-    
+    @artist=artist_name.name
   
     
   end
