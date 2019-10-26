@@ -4,7 +4,9 @@ class Artist
   def initialize (name)
     @name=name
     @songs=[]
+    unless self.find(name)
     @@all<< self
+    end
   end
   
   def self.all
