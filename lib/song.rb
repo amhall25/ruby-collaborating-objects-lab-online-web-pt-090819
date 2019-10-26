@@ -19,8 +19,8 @@ class Song
     songname =(file_name.split(" - ")[0])
     artist_name = (file_name.split(" - ")[1])
     newsong=self.new(songname)
-    newsong.artist = Artist.find_or_create_by_name.name(artist_name)
-    
+    artistinstance = Artist.find_or_create_by_name(artist_name)
+    @artist=artistinstance.name
   
     
   end
