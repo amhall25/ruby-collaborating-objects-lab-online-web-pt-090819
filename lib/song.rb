@@ -27,6 +27,7 @@ class Song
   def artist_name= (name)
     Artist.find_or_create_by_name(name)
     @artist_name=name
+    artist_name
   end
   
   def artist_name
